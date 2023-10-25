@@ -3,8 +3,8 @@ import { MdPermIdentity } from 'react-icons/md';
 import { MdOutlinePhone } from 'react-icons/md';
 import { Form, FormInput, FormButton } from './BookContantsFormStyles.styled';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContacts } from '../Redux/operations';
-import { onGetContacts } from '../Redux/Selectors';
+import { addContacts } from '../Redux/Contacts/operations';
+import { onGetContacts } from '../Redux/Contacts/Selectors';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
