@@ -1,0 +1,13 @@
+.search-container {
+    display: block;
+    position: relative;
+}
+
+.search-icon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 21px;
+    left: 25px;
+    color: #fff;
+}

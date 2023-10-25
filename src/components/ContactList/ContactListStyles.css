@@ -1,0 +1,11 @@
+.button-delete {
+    border-radius: 20px;
+    background: #DC4646;
+    color: #fff;
+    transition: 250ms cubic-bezier(.94, -0.01, .15, .99);
+}
+
+.button-delete:hover {
+    cursor: pointer;
+    background: #BE3B3B;
+}

@@ -1,0 +1,15 @@
+.form-input {
+    width: 450px;
+    display: block;
+    position: relative;
+    margin-top: 22px;
+}
+
+.form-input-icon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 25px;
+    top: 21px;
+    color: #fff;
+}
