@@ -1,33 +1,32 @@
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://connections-api.herokuapp.com';
+export const setAuthHeader = token => {
+  axios.defaults.headers.common.Authorization = `Bearer ${token}`;
+};
+export const clearAuthHeader = () => {
+  axios.defaults.headers.common.Authorization = '';
+};
+
+axios.defaults.baseURL = 'https://connections-api.herokuapp.com/';
 
 export const fetchDatesAll = signal => {
   return axios.get('contacts', { signal });
 };
 
-export const addNewContacts = contacts => {
-  return axios.post('contacts', contacts);
+export const addNewContacts = contact => {
+  return axios.post('contacts', contact);
 };
 
 export const delContact = id => {
   return axios.delete(`contacts/${id}`);
 };
 
-export const authHeader = token => {
-  axios.defaults.headers.common.Authorization = `User ${token}`;
-};
-
-export const clearAuthHeader = () => {
-  axios.defaults.headers.common.Authorization = '';
-};
-
 export const signUp = credentials => {
   return axios.post('users/signup', credentials);
 };
 
-export const loginIn = infologin => {
-  return axios.post('users/login', infologin);
+export const loginUser = credentials => {
+  return axios.post('users/login', credentials);
 };
 
 export const logoutUser = () => {

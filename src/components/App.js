@@ -1,18 +1,35 @@
-import { GlobalStyles } from './GlobalStyles.styled';
-import { BookContactForm } from './AddNewContact/BookContantsForm';
-import { ContactList } from './ContactList/ContactList';
-import { SearchContact } from './SearchContact/SearchContact';
-import { Container } from './container.styled';
+// import { RestrictedRoute } from './RestrictedRoute';
+import { PrivateRoute } from './PrivateRoute';
+import { Route, Routes } from 'react-router-dom';
+import { HomePage } from './Pages/Home';
+import { FormContacts } from './Pages/FormContacts';
+import { Layout } from './Layout';
 import './container.css';
 
 export const App = () => {
   return (
-    <Container>
-      <h1 className="title">Book Contact</h1>
-      <BookContactForm />
-      <SearchContact />
-      <ContactList />
-      <GlobalStyles></GlobalStyles>
-    </Container>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<HomePage />} />
+        <Route
+          path="/contacts"
+          element={
+            <PrivateRoute redirectTo="/login" component={<FormContacts />} />
+          }
+        />
+        {/* <Route
+          path="/register"
+          element={
+            <RestrictedRoute redirectTo="/contacts" component={<Register />} />
+          }
+        />
+        <Route
+          path="/login"
+          element={
+            <RestrictedRoute redirectTo="/contacts" component={<Login />} />
+          }
+        /> */}
+      </Route>
+    </Routes>
   );
 };

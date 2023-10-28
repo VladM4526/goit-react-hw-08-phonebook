@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import { PersistGate } from 'redux-persist/integration/react';
 import { persistor, store } from 'components/Redux/store';
+import { GlobalStyles } from './components/GlobalStyles.styled';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -12,6 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Provider store={store}>
         <BrowserRouter basename="/goit-react-hw-08-phonebook">
           <App />
+          <GlobalStyles />
         </BrowserRouter>
       </Provider>
     </PersistGate>
