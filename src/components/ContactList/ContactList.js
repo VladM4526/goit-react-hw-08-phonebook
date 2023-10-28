@@ -3,11 +3,11 @@ import { ContactListItem } from './ContactListItem';
 import { ContactListContainer } from './ContactListStyles.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteContact, datesAll } from '../Redux/Contacts/operations';
-import { onGetContacts, onGetSearch } from '../Redux/Contacts/Selectors';
+import { onGetContacts, selectSearch } from '../Redux/Contacts/Selectors';
 
 export const ContactList = () => {
   const contacts = useSelector(onGetContacts);
-  const search = useSelector(onGetSearch);
+  const search = useSelector(selectSearch);
   const dispatch = useDispatch();
 
   useEffect(() => {
