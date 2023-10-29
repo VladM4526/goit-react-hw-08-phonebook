@@ -1,12 +1,11 @@
+import { HomePage } from './Pages/Home';
+import { Layout } from './Layout';
+import { FormContacts } from './Pages/FormContacts';
+import { Route, Routes } from 'react-router-dom';
+import { Login } from './Pages/Login';
+import { Register } from './Pages/CreateAccount';
 import { RestrictedRoute } from './RestrictedRoute';
 import { PrivateRoute } from './PrivateRoute';
-import { Route, Routes } from 'react-router-dom';
-import { HomePage } from './Pages/Home';
-import { FormContacts } from './Pages/FormContacts';
-import { Login } from '../components/Pages/Login';
-import { Register } from './Pages/CreateAccount';
-import { Layout } from './Layout';
-import './container.css';
 
 export const App = () => {
   return (

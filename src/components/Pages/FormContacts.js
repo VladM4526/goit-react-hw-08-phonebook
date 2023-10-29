@@ -1,6 +1,6 @@
-import { BookContactForm } from 'components/AddNewContact/BookContantsForm';
-import { ContactList } from 'components/ContactList/ContactList';
-import { SearchContact } from 'components/SearchContact/SearchContact';
+import { BookContactForm } from '../AddNewContact/BookContantsForm';
+import { ContactList } from '../ContactList/ContactList';
+import { SearchContact } from '../SearchContact/SearchContact';
 
 export const FormContacts = () => {
   <>

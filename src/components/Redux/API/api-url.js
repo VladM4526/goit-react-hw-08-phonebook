@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+const BASE_URL = 'https://connections-api.herokuapp.com/';
+
 export const setAuthHeader = token => {
   axios.defaults.headers.common.Authorization = `Bearer ${token}`;
 };
@@ -7,7 +9,7 @@ export const clearAuthHeader = () => {
   axios.defaults.headers.common.Authorization = '';
 };
 
-axios.defaults.baseURL = 'https://connections-api.herokuapp.com/';
+axios.defaults.baseURL = BASE_URL;
 
 export const fetchDatesAll = signal => {
   return axios.get('contacts', { signal });

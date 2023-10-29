@@ -1,10 +1,10 @@
 import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { selectUser } from '../Redux/Auth/selectors';
+import { selectIsLoggedIn } from '../Redux/Auth/selectors';
 import { UserMenu } from '../UserMenu/UserMenu';
 
 export const Menu = () => {
-  const isLoggedIn = useSelector(selectUser);
+  const isLoggedIn = useSelector(selectIsLoggedIn);
   return (
     <>
       <div>
