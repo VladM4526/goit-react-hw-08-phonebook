@@ -20,7 +20,7 @@ export const ContactList = () => {
   }, [dispatch]);
 
   const onGetText = () => {
-    const normalizedFilter = search.toLowerCase().trim();
+    const normalizedFilter = search.toLowerCase();
     return contacts.filter(item => {
       return item.name.toLowerCase().includes(normalizedFilter);
     });

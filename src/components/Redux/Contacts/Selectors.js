@@ -1,4 +1,3 @@
 export const onGetContacts = state => state.contacts.contacts.items;
-export const selectIsLoading = state => state.contacts.isLoading;
 export const selectError = state => state.contacts.error;
-export const selectSearch = state => state.filter;
+export const selectSearch = state => state.search;
