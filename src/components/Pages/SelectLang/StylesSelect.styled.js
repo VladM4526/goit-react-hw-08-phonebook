@@ -2,12 +2,13 @@ import styled from 'styled-components';
 import { BiSolidDownArrow } from 'react-icons/bi';
 
 export const Container = styled.div`
-  position: fixed;
+  position: absolute;
+  right: 24px;
   z-index: 1;
 `;
 
 export const ContainerSelect = styled.div`
-  width: 94px;
+  max-width: 100%;
   cursor: pointer;
 `;
 
@@ -36,7 +37,7 @@ export const List = styled.ul`
 `;
 
 export const ListItems = styled.li`
-  width: 94px;
+  max-width: 100%;
   background: #d9d9d9;
   cursor: pointer;
 

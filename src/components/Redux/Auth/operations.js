@@ -6,7 +6,7 @@ import {
   refreshLogin,
   setAuthHeader,
   signUp,
-} from 'components/Service/ApiService';
+} from '../API/api-url';
 
 export const register = createAsyncThunk(
   'auth/register',
