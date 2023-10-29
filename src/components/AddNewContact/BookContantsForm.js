@@ -40,7 +40,7 @@ export const BookContactForm = () => {
       });
       return;
     }
-    dispatch(addContacts({ name, phone }));
+    dispatch(addContacts({ name, number: phone }));
     setName('');
     setNumber('');
   };
