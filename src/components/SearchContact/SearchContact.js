@@ -1,7 +1,7 @@
 import { MdSearch } from 'react-icons/md';
 import { SearchContainer, SearchInput } from './SearchContactStyles.styled';
 import { useDispatch } from 'react-redux';
-import { getSearch } from '../Redux/searchSlice';
+import { getSearch } from '../Redux/Contacts/searchSlice';
 import './SearchContactStyles.css';
 
 export const SearchContact = () => {

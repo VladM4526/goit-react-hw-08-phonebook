@@ -1,9 +1,9 @@
-import { HomePage } from './Pages/Home';
+import { HomePage } from '../Pages/Home';
 import { Layout } from './Layout';
-import { FormContacts } from './Pages/FormContacts';
+import { FormContacts } from '../Pages/FormContacts';
 import { Route, Routes } from 'react-router-dom';
-import { Login } from './Pages/Login';
-import { Register } from './Pages/CreateAccount';
+import { Login } from '../Pages/Login';
+import { Register } from '../Pages/CreateAccount';
 import { RestrictedRoute } from './RestrictedRoute';
 import { PrivateRoute } from './PrivateRoute';
 
