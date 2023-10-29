@@ -3,9 +3,11 @@ import { ContactList } from '../components/ContactList/ContactList';
 import { SearchContact } from '../components/SearchContact/SearchContact';
 
 export const FormContacts = () => {
-  <>
-    <BookContactForm />
-    <SearchContact />
-    <ContactList />
-  </>;
+  return (
+    <>
+      <BookContactForm />
+      <SearchContact />
+      <ContactList />
+    </>
+  );
 };

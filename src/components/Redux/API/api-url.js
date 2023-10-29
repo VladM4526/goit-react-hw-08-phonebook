@@ -34,3 +34,7 @@ export const loginUser = credentials => {
 export const logoutUser = () => {
   return axios.post('users/logout');
 };
+
+export const refreshLogin = () => {
+  return axios.get('users/current');
+};
